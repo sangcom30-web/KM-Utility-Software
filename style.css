@@ -1,0 +1,143 @@
+:root {
+  --bg: #12161b;
+  --panel: #1b2028;
+  --border: #2a313b;
+  --text: #e7eaee;
+  --text-dim: #8b94a3;
+  --accent: #e8a33d;
+  --accent-dim: #4a3a1e;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Space Grotesk', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 64px 24px 80px;
+}
+
+/* header */
+
+.masthead {
+  margin-bottom: 48px;
+}
+
+.live {
+  display: inline-block;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  color: var(--accent);
+  letter-spacing: 0.02em;
+  margin-bottom: 20px;
+}
+
+.masthead h1 {
+  font-size: 34px;
+  font-weight: 700;
+  margin: 0 0 12px;
+  letter-spacing: -0.01em;
+}
+
+.masthead .sub {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-dim);
+  margin: 0;
+  max-width: 46ch;
+}
+
+/* rack of units */
+
+.rack {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+}
+
+.unit {
+  background: var(--panel);
+  padding: 24px;
+}
+
+.unit-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  flex: none;
+  background: var(--accent);
+  box-shadow: 0 0 8px var(--accent);
+}
+
+.unit-head h2 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  flex: 1;
+  min-width: 0;
+}
+
+.dl {
+  flex: none;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  color: var(--bg);
+  background: var(--accent);
+  text-decoration: none;
+  padding: 9px 16px;
+  transition: background 0.15s ease;
+}
+
+.dl:hover { background: #f2b455; }
+.dl:active { background: #d3922f; }
+
+.desc {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-dim);
+  margin: 0 0 14px;
+  max-width: 58ch;
+}
+
+.meta {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  color: var(--text-dim);
+}
+
+.meta .sep {
+  margin: 0 8px;
+  color: var(--border);
+}
+
+/* footer */
+
+.foot {
+  margin-top: 40px;
+  font-size: 13px;
+  color: var(--text-dim);
+}
+
+/* mobile */
+
+@media (max-width: 520px) {
+  .page { padding: 40px 16px 60px; }
+  .masthead h1 { font-size: 28px; }
+  .unit-head { flex-wrap: wrap; }
+  .dl { order: 3; width: 100%; text-align: center; margin-top: 8px; }
+}
