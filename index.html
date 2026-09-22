@@ -3,76 +3,202 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ดาวน์โหลดโปรแกรม</title>
+<meta name="theme-color" content="#0b1220">
+<title>KM Tools — ดาวน์โหลดโปรแกรม</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="bg-grid"></div>
 
 <div class="page">
+  <header class="hero">
+    <div class="topline">
+      <div class="brand">
+        <div class="brand-mark">KONICA MINOLTA</div>
+        <span>INTERNAL TOOLS</span>
+      </div>
+      <div class="status"><i></i> SYSTEM ONLINE</div>
+    </div>
 
-  <header class="masthead">
-    <span class="live">● กำลังทำงาน</span>
-    <h1>ดาวน์โหลดโปรแกรม</h1>
-    <p class="sub">โปรแกรมที่พัฒนาเอง สำหรับงานเครื่องพิมพ์และงานสแกนเอกสารในออฟฟิศ</p>
+    <div class="hero-copy">
+      <div class="eyebrow">SOFTWARE DOWNLOAD CENTER</div>
+      <h1>Utility Software Download</h1>
+      <p>Open Source ที่พัฒนาขึ้นเพื่อสนับสนุนงานเครื่องพิมพ์ รายงานการพิมพ์ งานสแกน และการจัดการเอกสารภายในองค์กร</p>
+    </div>
   </header>
 
-  <main class="rack">
+  <main>
+    <div class="section-head">
+      <div>
+        <span class="section-label">AVAILABLE TOOLS</span>
+        <h2>โปรแกรมทั้งหมด</h2>
+      </div>
+      <span class="count">05 TOOLS</span>
+    </div>
 
-    <article class="unit">
-      <div class="unit-head">
-        <span class="dot"></span>
-        <h2>KONICA MINOLTA Meter Export Tool</h2>
-        <a class="dl" href="https://github.com/sangcom30-web/tool-downloads/releases/download/V1.0/MeterCountExportToolPortable.zip">ดาวน์โหลด</a>
-      </div>
-      <p class="desc">
-        สแกนเครื่องพิมพ์ KONICA MINOLTA ในเครือข่าย ดึงค่ามิเตอร์ผ่าน SNMP และสร้างรายงานการใช้งาน
-        เป็นไฟล์ PDF และ Excel ให้อัตโนมัติ พร้อมระบบแจ้งเตือนเมื่อเครื่องออฟไลน์หรือใช้งานเกินงบ
-      </p>
-      <div class="meta">
-        <span>v2026.08.22</span><span class="sep">/</span><span>Windows</span><span class="sep">/</span><span>.zip</span>
-      </div>
-    </article>
+    <section class="tools">
 
-    <article class="unit">
-      <div class="unit-head">
-        <span class="dot"></span>
-        <h2>Doc Scan Utility</h2>
-        <a class="dl" href="downloads/DocScanUtility.zip" download>ดาวน์โหลด</a>
-      </div>
-      <p class="desc">
-        เฝ้าดูโฟลเดอร์สแกน เปลี่ยนชื่อและจัดเรียงไฟล์ที่เข้ามาให้อัตโนมัติ รองรับหลายโปรไฟล์
-        แต่ละโปรไฟล์ตั้งค่าโฟลเดอร์และกฎการตั้งชื่อไฟล์ของตัวเองได้ ไฟล์ชื่อซ้ำจะไม่ถูกเขียนทับ (Available for download soon.)
-      </p>
-      <div class="meta">
-        <span>v1.0</span><span class="sep">/</span><span>Windows</span><span class="sep">/</span><span>.zip</span>
-      </div>
-    </article>
+      <article class="tool-card">
+        <div class="card-top">
+          <div class="tool-icon meter">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5m0 14h16M8 16v-4m4 4V8m4 8v-7m4 7V4"/></svg>
+          </div>
+          <div class="tool-tag">METER / SNMP</div>
+        </div>
+        <h3>KONICA MINOLTA<br>Meter Export Tool</h3>
+        <p>สแกนเครื่องพิมพ์ KONICA MINOLTA ในเครือข่าย ดึงค่ามิเตอร์ผ่าน SNMP และสร้างรายงานการใช้งานเป็นไฟล์ PDF และ Excel พร้อมตรวจสอบสถานะเครื่อง</p>
+        <button type="button" class="preview-btn" data-img="assets/preview-meter-export.png" data-caption="KONICA MINOLTA Meter Export Tool">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+          <span>ดูตัวอย่างหน้าจอ</span>
+        </button>
+        <div class="card-bottom">
+          <div class="meta">
+            <span>v2026.08.22</span><b>•</b><span>Windows</span><b>•</b><span>ZIP</span>
+          </div>
+          <a class="download" href="downloads/CounterExport.zip" download>
+            <span>ดาวน์โหลด</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 20h14"/></svg>
+          </a>
+        </div>
+      </article>
 
-    <article class="unit">
-      <div class="unit-head">
-        <span class="dot"></span>
-        <h2>FTP Scan Utility</h2>
-        <a class="dl" href="downloads/FTPScanUtility.zip" download>ดาวน์โหลด</a>
-      </div>
-      <p class="desc">
-        เปิดเซิร์ฟเวอร์ FTP บนเครื่องเพื่อรับไฟล์สแกนจากเครื่องสแกนเนอร์ KONICA MINOLTA โดยตรง
-        พร้อมระบบป้องกันไฟล์ชื่อซ้ำแบบเดียวกับ Doc Scan Utility (Available for download soon.)
-      </p>
-      <div class="meta">
-        <span>v1.0</span><span class="sep">/</span><span>Windows</span><span class="sep">/</span><span>.zip</span>
-      </div>
-    </article>
+      <article class="tool-card">
+        <div class="card-top">
+          <div class="tool-icon driver">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9V3h12v6M4 9h16v8H4z M6 17v4h12v-4"/></svg>
+          </div>
+          <div class="tool-tag">DRIVER / PCL</div>
+        </div>
+        <h3>Konica Minolta<br>Driver Installer PCL</h3>
+        <p>ค้นหาเครื่องพิมพ์ KONICA MINOLTA ในเครือข่ายและติดตั้งไดรเวอร์ Universal PCL ให้อัตโนมัติ เลือกติดตั้งได้หลายเครื่องพร้อมกัน</p>
+        <button type="button" class="preview-btn" data-img="assets/preview-driver-pcl.png" data-caption="Konica Minolta Driver Installer PCL">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+          <span>ดูตัวอย่างหน้าจอ</span>
+        </button>
+        <div class="card-bottom">
+          <div class="meta">
+            <span>v3.9.1310.0</span><b>•</b><span>Windows x64</span><b>•</b><span>ZIP</span>
+          </div>
+          <a class="download" href="downloads/KonicaDriverInstallerPCL.zip" download>
+            <span>ดาวน์โหลด</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 20h14"/></svg>
+          </a>
+        </div>
+      </article>
 
+      <article class="tool-card is-soon">
+        <div class="card-top">
+          <div class="tool-icon driver">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9V3h12v6M4 9h16v8H4z M6 17v4h12v-4"/></svg>
+          </div>
+          <div class="tool-tag">DRIVER / PS</div>
+        </div>
+        <h3>Konica Minolta<br>Driver Installer PS</h3>
+        <p>ค้นหาเครื่องพิมพ์ KONICA MINOLTA ในเครือข่ายและติดตั้งไดรเวอร์ Universal PS ให้อัตโนมัติ เลือกติดตั้งได้หลายเครื่องพร้อมกัน</p>
+        <div class="card-bottom">
+          <div class="meta">
+            <span>—</span><b>•</b><span>Windows x64</span><b>•</b><span>ZIP</span>
+          </div>
+          <div class="soon">สามารถดาวน์โหลดได้เร็วๆ นี้</div>
+        </div>
+      </article>
+
+      <article class="tool-card is-soon">
+        <div class="card-top">
+          <div class="tool-icon scan">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h5M4 5v5m15-6h-5m6 1v5M5 20h5m-6-1v-5m15 6h-5m6-1v-5M7 12h10"/></svg>
+          </div>
+          <div class="tool-tag">SCAN / FILE</div>
+        </div>
+        <h3>Doc Scan<br>Utility</h3>
+        <p>เฝ้าดูโฟลเดอร์สแกน เปลี่ยนชื่อและจัดเรียงไฟล์ที่เข้ามาให้อัตโนมัติ รองรับหลายโปรไฟล์ และป้องกันไฟล์ชื่อซ้ำไม่ให้ถูกเขียนทับ</p>
+        <div class="card-bottom">
+          <div class="meta">
+            <span>v1.0</span><b>•</b><span>Windows</span><b>•</b><span>ZIP</span>
+          </div>
+          <div class="soon">สามารถดาวน์โหลดได้เร็วๆ นี้</div>
+        </div>
+      </article>
+
+      <article class="tool-card is-soon">
+        <div class="card-top">
+          <div class="tool-icon ftp">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M6 4h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm2 7h8m-8 4h5"/></svg>
+          </div>
+          <div class="tool-tag">FTP / SCANNER</div>
+        </div>
+        <h3>FTP Scan<br>Utility</h3>
+        <p>เปิด FTP Server บนเครื่องเพื่อรับไฟล์สแกนจากเครื่องสแกนเนอร์ KONICA MINOLTA โดยตรง พร้อมระบบป้องกันไฟล์ชื่อซ้ำ</p>
+        <div class="card-bottom">
+          <div class="meta">
+            <span>v1.0</span><b>•</b><span>Windows</span><b>•</b><span>ZIP</span>
+          </div>
+          <div class="soon">สามารถดาวน์โหลดได้เร็วๆ นี้</div>
+        </div>
+      </article>
+
+    </section>
   </main>
 
-  <footer class="foot">
-    <p>มีปัญหาการใช้งาน ติดต่อผู้ดูแลระบบ</p>
+  <footer>
+    <div class="footer-line"></div>
+    <div class="footer-content">
+      <span>KM TOOLS</span>
+      <span>Internal Software Portal</span>
+      <span>© 2026</span>
+    </div>
+    <div class="footer-mascot">
+      <img src="assets/ninja.png" alt="KM Tools mascot">
+    </div>
   </footer>
-
 </div>
+
+<div class="lightbox" id="lightbox">
+  <button type="button" class="lightbox-close" id="lightbox-close" aria-label="ปิด">✕</button>
+  <figure>
+    <img id="lightbox-img" src="" alt="">
+    <figcaption id="lightbox-caption"></figcaption>
+  </figure>
+</div>
+
+<script>
+(function () {
+  var lightbox = document.getElementById('lightbox');
+  var img = document.getElementById('lightbox-img');
+  var caption = document.getElementById('lightbox-caption');
+  var closeBtn = document.getElementById('lightbox-close');
+
+  function open(src, text) {
+    img.src = src;
+    img.alt = text;
+    caption.textContent = text;
+    lightbox.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function close() {
+    lightbox.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll('.preview-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      open(btn.dataset.img, btn.dataset.caption);
+    });
+  });
+
+  closeBtn.addEventListener('click', close);
+  lightbox.addEventListener('click', function (e) {
+    if (e.target === lightbox) close();
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') close();
+  });
+})();
+</script>
 
 </body>
 </html>
